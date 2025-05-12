@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+   <head>
+
+ <style>
+   @font-face {
+      font-family: Garipso;
+      src: url(Grapiso-BF67a0d196b1950.otf);
+      font-family:malibu;
+      src: url(Kangge-BF67ce62908aea0.ttf);
+   }
+   
+   * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background:#2c786c;
+            color: white;
+            height: 100%;
+            display: flex;
+            position: relative;
+        }
+
+        .video-container {
+            position: absolute;
+            width: 100%;
+            height: 88vh;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+        }
+
+        .nav-bar {
+            position: absolute;
+            top: 10px;
+            left: 40%;
+            display: flex;
+            gap: 70px;
+            background:transparent;
+            padding: 10px 20px;
+        }
+
+        .nav-bar a {
+            color: #004445;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.4s;
+        }
+        .nav-bar a:hover {
+            color: rgb(241, 111, 23);
+            text-decoration:underline;
+        }
+        .text-overlay {
+            font-family:malibu;
+            color:rgb(241, 111, 23) ;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            font-weight: lighter;
+            background: transparent;
+            text-align: center;
+        }
+        .logo {
+            position: absolute;
+            top: 5px;
+            left: 15px; 
+            width: 250px;
+            height: auto;
+            cursor: pointer;
+        }
+        .content {
+            position:absolute;
+            top: 500px;
+            left: 50px;
+            font-size: 32px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .buttons {
+         position:absolute;
+         top: 500px;
+         right: 50px;
+            display: flex;
+            gap: 75px;
+        }
+        .btn {
+            padding: 35px 60px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .signup {
+            background-color:rgb(241, 111, 23) ;
+            color:white;
+        }
+
+        .signup:hover {
+            background-color: #004445;
+        }
+
+        .login {
+            background-color: rgb(241, 111, 23);
+            color: white;
+        }
+
+        .login:hover {
+            background-color:#004445;
+        }
+        .info-text{
+         position: absolute;
+         top: 650px;
+         left:30px;
+         font-size: 24px;
+         font-family: garipso;
+        }
+    
+ </style>
+   </head>
+   <body>
+      <div class="video-container">
+         <video autoplay muted loop>
+             <source src="6010585_Luxury_House_3840x2160.mp4">
+             Your browser does not support the video tag.
+         </video>
+        <a href="PROJECT.html"><img src="logo.png" alt="Logo" class="logo"></a>
+
+         <div class="nav-bar">
+            <a href="PROJECT.html">Home</a>
+             <a href="rent.html">Rent</a>
+             <a href="#">Buy</a>
+             <a href="#">Sell</a>
+             <a href="info-text">About Us</a>
+             <a href="#">Contact</a>
+         </div>
+         <div class="text-overlay">
+          Let's get you home
+         </div>
+     </div>
+     <div class="abt.us">
+      <div class="content"><h1>Join Us Today...</h1> </div>
+      <div class="buttons">
+         <a href="Signup.html"><button class="btn signup">Sign Up </button></a>
+          <a href="Login.html"><button class="btn login">Login</button></a>
+      </div>
+      <p class="info-text">
+        <b style="font-size: 35px;">About Us</b>
+        <br> At Doxa Shelters, we believe that finding the perfect home or investment property should be an exciting and stress-free experience. With years of expertise in the real estate market, we are committed to helping individuals, families, and businesses find properties that match their unique needs and aspirations.</br>
+   
+        <br> <b style="font-size: 28px;">Why Choose Us?</b></br>
+         <br>✔ Expertise & Experience – Our team of professionals has extensive knowledge of the market, ensuring that you receive the best advice when buying, selling, or renting.</br>
+        <br> ✔ Client-Centered Approach – We prioritize your needs, providing personalized solutions and transparent communication every step of the way.</br>
+        <br> ✔ Wide Property Listings – From modern apartments to luxury villas and commercial spaces, we offer a diverse range of properties to suit every budget.</br>
+         <br>✔ Trusted & Reliable – We build long-term relationships with our clients by delivering honesty, integrity, and excellence in every transaction.</br>
+     </p>
+   </div>
+   </body>
+</html>
